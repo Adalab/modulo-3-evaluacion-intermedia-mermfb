@@ -1,5 +1,3 @@
-//que pinte la lista de pokemons
-
 import Pokemon from "./Pokemon";
 
 function PokeList(props) {
