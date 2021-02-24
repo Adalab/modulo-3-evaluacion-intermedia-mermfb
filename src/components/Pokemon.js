@@ -1,9 +1,9 @@
 //que pinte cada pokemon
 
 function Pokemon(props) {
-  const pokemonTypes = props.pokemonProp.types.map((pokemonType) => {
+  const pokemonTypes = props.pokemonProp.types.map((pokemonType, index) => {
     return (
-      <li key={props.pokemonProp.id} id={props.pokemonProp.id}>
+      <li key={index} id={pokemonType.id}>
         {pokemonType}
       </li>
     );
