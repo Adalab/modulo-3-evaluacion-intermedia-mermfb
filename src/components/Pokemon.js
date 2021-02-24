@@ -6,7 +6,7 @@ class Pokemon extends React.Component {
     const pokemonTypes = this.props.pokemonProp.types.map(
       (pokemonType, index) => {
         return (
-          <li className="type" key={index} id={pokemonType.id}>
+          <li className="type" key={index}>
             {pokemonType}
           </li>
         );
@@ -14,7 +14,10 @@ class Pokemon extends React.Component {
     );
     return (
       <>
-        <img src={this.props.pokemonProp.url}></img>
+        <img
+          src={this.props.pokemonProp.url}
+          alt={`Imagen de ` + this.props.pokemonProp.name}
+        ></img>
         <h3 className="name">{this.props.pokemonProp.name}</h3>
         <ul className="typesList">{pokemonTypes}</ul>
       </>
