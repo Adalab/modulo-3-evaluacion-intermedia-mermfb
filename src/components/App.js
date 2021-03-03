@@ -4,8 +4,7 @@ import PokeList from "./PokeList";
 import Pokemondata from "../data/data.json";
 
 function App() {
-  const [data, setData] = useState(Pokemondata);
-  console.log(data);
+  const data = Pokemondata;
   return (
     <div className="App">
       <h1>Mi lista de Pokemons</h1>
